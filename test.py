@@ -254,9 +254,10 @@ def main():
                 f.writelines(info)
             continue
 
-    np.savetxt('error_id.txt',np.array(error_id),fmt='%d',delimiter=' ')
-    save_dict('./sale.json',predicted)
+    #np.savetxt('error_id.txt',np.array(error_id),fmt='%d',delimiter=' ')
+
     output2file(predicted,ids,'./output.txt')
+    save_dict('./sale.json', predicted)
     print("end")
 
 
